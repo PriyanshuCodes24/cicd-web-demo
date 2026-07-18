@@ -1,0 +1,12 @@
+services:
+  web:
+    image: cicd-web-demo:latest
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: cicd-web-demo-container
+
+    ports:
+      - "8080:80"
