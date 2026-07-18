@@ -2,38 +2,121 @@
 <html>
 
 <head>
-    <title>CI/CD Demo Application</title>
+    <title>CI/CD Release Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
 <div class="container">
 
-    <h1>🚀 CI/CD Demo Application</h1>
+    <header>
 
-    <p>
-        This application will be deployed using:
-    </p>
-
-    <div class="box">
-        <h3>Pipeline Flow</h3>
+        <h1>🚀 CI/CD Release Dashboard</h1>
 
         <p>
-            GitHub → Jenkins → Docker → Deployment
+            Automated Deployment Demo Application
         </p>
-    </div>
+
+    </header>
 
 
-    <h2>Environment</h2>
+    <section class="card">
 
-    <p id="environment">
-        LOCAL
-    </p>
+        <h2>Application Information</h2>
+
+        <div class="info">
+
+            <p>
+                <strong>Application:</strong>
+                Employee Portal
+            </p>
 
 
-    <button onclick="deployMessage()">
-        Test Application
+            <p>
+                <strong>Version:</strong>
+                1.0.0
+            </p>
+
+
+            <p>
+                <strong>Environment:</strong>
+                <span class="env">
+                    LOCAL
+                </span>
+            </p>
+
+
+            <p>
+                <strong>Status:</strong>
+
+                <span class="success">
+                    RUNNING
+                </span>
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section class="card">
+
+
+        <h2>Pipeline Flow</h2>
+
+
+        <div class="pipeline">
+
+
+            <div class="stage completed">
+                Git Commit
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <div class="stage completed">
+                Jenkins Build
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <div class="stage completed">
+                Docker Image
+            </div>
+
+
+            <div class="arrow">
+                →
+            </div>
+
+
+            <div class="stage pending">
+                Deployment
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <button onclick="checkDeployment()">
+        Verify Deployment
     </button>
 
 

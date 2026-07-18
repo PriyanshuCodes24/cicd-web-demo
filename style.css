@@ -1,53 +1,139 @@
 body {
 
-    background-color: #101820;
-    color: white;
-    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
 
 }
+
 
 
 .container {
 
-    text-align: center;
-    margin-top: 80px;
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:40px;
 
 }
 
 
-.box {
 
-    background-color: #1f2937;
-    padding: 20px;
-    margin: 30px auto;
-    width: 400px;
-    border-radius: 10px;
+header {
+
+    margin-bottom:40px;
 
 }
+
+
+
+.card {
+
+    background:#1e293b;
+    padding:25px;
+    margin:25px auto;
+    border-radius:15px;
+
+}
+
+
+
+.info p {
+
+    font-size:18px;
+
+}
+
+
+
+.env {
+
+    color:#38bdf8;
+
+}
+
+
+
+.success {
+
+    color:#22c55e;
+
+}
+
+
+
+.pipeline {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+
+.stage {
+
+    padding:15px;
+    border-radius:10px;
+    min-width:120px;
+
+}
+
+
+
+.completed {
+
+    background:#16a34a;
+
+}
+
+
+
+.pending {
+
+    background:#f59e0b;
+
+}
+
+
+
+.arrow {
+
+    font-size:25px;
+
+}
+
 
 
 button {
 
-    padding: 12px 25px;
-    background-color: #00c853;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
 
 }
+
 
 
 button:hover {
 
-    background-color: #009624;
+    background:#1d4ed8;
 
 }
 
 
-#environment {
 
-    font-size: 30px;
-    color: #00e5ff;
+#message {
+
+    font-size:20px;
+    color:#38bdf8;
 
 }

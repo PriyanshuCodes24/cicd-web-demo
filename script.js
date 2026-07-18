@@ -1,6 +1,6 @@
-function deployMessage(){
+function checkDeployment(){
 
     document.getElementById("message").innerHTML =
-    "Application is running successfully!";
+    "✅ Deployment verification successful. Application is healthy.";
 
 }
