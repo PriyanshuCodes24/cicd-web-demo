@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CI/CD Demo Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 CI/CD Demo Application</h1>
+
+    <p>
+        This application will be deployed using:
+    </p>
+
+    <div class="box">
+        <h3>Pipeline Flow</h3>
+
+        <p>
+            GitHub → Jenkins → Docker → Deployment
+        </p>
+    </div>
+
+
+    <h2>Environment</h2>
+
+    <p id="environment">
+        LOCAL
+    </p>
+
+
+    <button onclick="deployMessage()">
+        Test Application
+    </button>
+
+
+    <p id="message"></p>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
